@@ -3,8 +3,15 @@
     <title>Random Number</title>
   </head>
   <body>
+    <form>
+      <input type='text' name='guess' />
+      <input type='submit' value='Guess!' />
+    </form>
     <p>
-      The secret number is <%= number %>
+      <%= feedback %>
+      <% if guess == number %>
+        The secret number is <%= number %>
+      <% end %>
     </p>
   </body>
 </html>
