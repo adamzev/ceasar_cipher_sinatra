@@ -4,14 +4,11 @@
   </head>
   <body>
     <form>
-      <input type='text' name='guess' />
-      <input type='submit' value='Guess!' />
+      <input type='text' name='input' />
+      <input type='submit' value='Encode!' />
     </form>
     <p>
-      <%= feedback %>
-      <% if guess == number %>
-        The secret number is <%= number %>
-      <% end %>
+      <%= message %>
     </p>
   </body>
 </html>
